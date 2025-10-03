@@ -319,6 +319,44 @@ This is a demonstration project, but contributions are welcome:
 - Enhance the documentation
 - Add unit tests
 
+## 💻 AI Generation
+
+This project, including the code and Slidev presentation, was 99% generated using LLM Copilot Claude Sonnet 4.
+I used the following prompts - 
+1. I want to illustrate the value of design patterns in Object Oriented programming, particularly when dealing with badly written legacy code. I want to create an example of a badly written order processing class. The order processing class will take a very complicated Order object, which contains products, product ensembles (a set of products), and product kits (a new kind of set of products). Products have RRP, VAT, and quantities. Orders have discount codes, payment methods, and actual price paid. The class should be a big ball of mud, and will change various properties in Order, so it will be hard to make the changes we need - which is to report various details to a Retail Audit system via a generated CSV file. I want to then illustrate how the Strategy Pattern and Mediator Pattern can improve the CSV logic. Please make sure that the legacy code can be improved using Strategy Pattern and Mediator Pattern
+
+Note: had to "Try again" a few times
+
+2.  Add a suitable .gitignore file and commit to the git repository
+3.  Now create a presentation using Slidev. I will present this to a group of software engineers who use English as their second language. They have already had a seminar on SOLID code principles, and now we are doing a presentation on Deisgn Patterns. My colleagues will present on Creational and Structural Patterns, then I need to create a presentation to follow on from that, explaining Behavioral Patterns using Strategy and Mediator as examples. The presentation should avoid too much information on each slide (example code is good though), and take only 30 minutes to present. Please ask me for any more information you need to make the presentation suitable for them
+
+**Copilot then asked the following questions -**
+Questions about your audience and presentation context:
+Audience Experience Level:
+
+What's their experience level with design patterns? Are they familiar with the concept but not the specific patterns?
+Do they work primarily in C#/.NET, or should I keep examples more language-agnostic?
+Presentation Flow:
+
+Should I briefly recap what Behavioral Patterns are, or will your colleagues have covered the three pattern categories (Creational, Structural, Behavioral)?
+Do you want me to focus more on the "why" (problems these patterns solve) or the "how" (implementation details)?
+Real-world Context:
+
+Would you like me to reference the order processing example we just built, or create simpler, more focused examples?
+Are there specific pain points or scenarios from their current work that would resonate?
+Interactive Elements:
+
+Would you like discussion points or questions to engage the audience?
+Any preference for slide transitions or animations to help with the flow?
+Key Takeaways:
+
+What's the main goal? Should they be able to identify when to use these patterns, implement them, or both?
+Do you want to include "anti-patterns" or common mistakes to avoid?
+
+4.  1. Most are familiar with design patterns. A few are fairly new programmers, so need clear guidance on how to use design patterns. They primarily use C# 2. No need for a recap. "Why" is more useful than "how". 3. The example we built should be fine, but you can make the code simpler if it helps. 4. add some discussion points if it helps 5. knowing when to use patterns is the most important, because if they forget how then they can check the Internet. No need for anti-patterns
+
+It then failed to generate the Slidev presentation properly, but the slides.md was correct and I manually fixed it.
+
 ## 📄 License
 
 This project is for educational purposes. Feel free to use it for learning and teaching design patterns.
