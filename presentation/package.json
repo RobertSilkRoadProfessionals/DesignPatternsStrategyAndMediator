@@ -1,18 +1,16 @@
 {
-  "name": "presentation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "design-patterns-slides",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "slidev slides.md",
-    "build": "slidev build slides.md",
-    "export": "slidev export slides.md"
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@slidev/cli": "^52.2.4",
-    "@slidev/theme-default": "^0.25.0"
+    "@slidev/cli": "^0.48.8",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.21"
   }
 }
